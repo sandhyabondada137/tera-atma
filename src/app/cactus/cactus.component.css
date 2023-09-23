@@ -1,0 +1,159 @@
+.title a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);  
+   
+} 
+.navs{
+    border-bottom: 1px solid rgb(238, 199, 199);
+    background-color: #e5d6ef;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 999;
+
+} 
+
+.navs li{
+    list-style: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown-button {
+   
+ 
+   
+    border: none;
+    cursor: pointer;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+ 
+    /* min-width: 160px; */
+
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: #0b0b0b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #c8afd9;
+    color: #fff !important;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.kk{
+  display: grid;
+ grid-template-columns: auto auto ; 
+
+ /* margin-left: 300px; */
+}
+
+
+
+
+
+    
+     
+  
+  
+  .icon span{
+      font-size: 30px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 700;
+      color: rgb(185, 14, 252);
+  }
+
+  a{
+      text-decoration: none;
+    
+  }
+  .body{
+       background-image: url("https://as2.ftcdn.net/v2/jpg/01/10/86/01/1000_F_110860121_Sa6SlyzxVKC25PBupNqUGtBhbIM7Uxxm.jpg");
+     
+   width:90%;
+    display: flex;
+ 
+  
+   
+  }
+  body{
+    width: 100%;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/01/10/86/01/1000_F_110860121_Sa6SlyzxVKC25PBupNqUGtBhbIM7Uxxm.jpg");
+     
+   
+  }
+  button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(250, 247, 248);
+    font-size: 15px;
+    color: rgb(185, 14, 252);
+    background-color: #e2e3e2;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+  }
+mat-sidenav-container{
+ 
+    width: 100%;
+   margin-bottom: 0px;
+  
+  
+}
+
+mat-sidenav{
+    width: 50%;
+    background:linear-gradient(to left,rgb(231, 229, 231),rgb(245, 250, 245));
+    background-color: #e2e6e6;
+    /* background-image: url("https://as2.ftcdn.net/v2/jpg/01/10/86/01/1000_F_110860121_Sa6SlyzxVKC25PBupNqUGtBhbIM7Uxxm.jpg");*/
+    background-image: url("https://img.freepik.com/premium-photo/abstract-white-design-background-with-smooth-wavy-lines_476363-6179.jpg");
+   /* position: fixed; */
+ 
+ 
+   
+  
+
+} 
+.btn{
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 80px;
+
+}
+.btnn{
+    margin-top: 200px;
+    text-align: center;
+    margin-right: 80px;
+}
+.icc{
+    font-size: 25px;
+   margin: 20px;
+
+}
+
+
+
+
+
+
+
+
+

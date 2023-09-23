@@ -1,0 +1,20 @@
+{
+  "signup": [
+    {
+      "name": "sandhya",
+      "mail": "sandhya@gmail.com",
+      "phonenum": "1234567890",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "susmitha",
+      "mail": "susmi@gmail.com",
+      "phonenum": "9876543210",
+      "password": "5678",
+      "id": 2
+    }
+  ],
+  "login": [],
+  "products":[]
+}

@@ -1,0 +1,24 @@
+<div class="navs">
+<section class="navs d-flex justify-content-between ">
+    <div class="py-4 px-4 text-light title fs-1 fw-bold"> <a href="" class="title fs-1 fw-bold" >GROW </a></div> 
+    <div class="text-light title fs-5 fw-semibold details d-flex p-5 ps-5 ">
+        <li class="px-3"> <a href="homes" routerLink="/homes">Home</a> </li>
+        <li class="dropdown px-3">
+            <a class="dropdown-button" href="shop">Shop</a>
+            <div class="dropdown-content">
+                <a href="#" routerLink="/cact">cactus</a>
+                <a href="#">succulent</a>
+                <a href="#">indoor</a>
+                <a href="#">bonsai</a>
+            </div>
+        </li>
+       
+        <li class="px-3"><a href="about">About Us</a></li>
+        <li class="px-3"><a href="test" routerLink="/test">Testimonial</a></li>
+        <li class="px-3"><a href="cart"><i class="fa-solid fa-cart-shopping text-light title fs-5 fw-semibold"></i></a></li>
+        <li class="px-3"><a href="" routerLink="/browser">LogOut</a></li>
+       
+    </div>
+    <router-outlet></router-outlet>
+ </section>
+</div>

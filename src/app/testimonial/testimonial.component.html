@@ -1,0 +1,83 @@
+<div class="navs bg-primary">
+    <section class="navs d-flex justify-content-between bg-primary">
+        <div class="py-5 px-4 text-light title fs-1 fw-bold"> <a href="" class="title fs-1 fw-bold" >GROW </a>
+        </div> 
+        <div class="text-light title fs-5 fw-bold details d-flex p-5 ps-5 ">
+            <li class="px-3"> <a href="homes" routerLink="/home">Home</a> </li>
+
+            <li class="dropdown px-3">
+                <a class="dropdown-button" href="shop">Shop</a>
+                <div class="dropdown-content">
+                    <a href="#" >cactus</a>
+                    <a href="#">succulent</a>
+                    <a href="#">indoor</a>
+                    <a href="#">bonsai</a>
+                </div>
+            </li>
+
+            <li class="px-3"><a href="about">About Us</a></li>
+            <li class="px-3"><a href="tests" routerLink="/test">Testimonial</a></li>
+           <button class="bg-primary ww " routerLink="/cart">
+            <li class="px-3"><a href="cart" ><i class="fa-solid fa-cart-shopping text-light title fs-5 fw-bold"></i></a></li>
+            <div style="font-size: 10px; font-size: 10px; width:15px; height: 15px;" class="hh">{{totalitem}}</div>
+        </button>
+        </div>
+
+    </section>
+</div>
+
+<!-- container1 finished -->
+<section class="d-flex justify-content-around items">
+    
+    <div class="d-flex  m-3 ">
+        <div class="item d-flex px-2 ">
+            <a >
+                <img src="https://cdn.corporatefinanceinstitute.com/assets/consumer-products.jpg" alt="" height="70" width="70">
+                <h6 class=" fw-sembold  pt-2">All Products</h6>
+            </a>
+        </div>
+        <div class="item px-2">
+            <a >
+                <img src="https://thumbs.dreamstime.com/b/many-used-modern-electronic-gadgets-use-white-floor-reuse-recycle-concept-top-view-153892434.jpg" alt="" height="70" width="70">
+              
+                <h6 class=" fw-sembold  pt-2">Electronics</h6>
+            </a>
+        </div>
+        <div class="item px-3">
+            <a >
+                <img src="https://fabriclore.com/cdn/shop/articles/Blog-Banner-for-regular-blog_11.jpg?v=1657273299&width=1500" alt="" height="70" width="70">
+              
+                <h6 class=" fw-sembold  pt-2">Fashion</h6>
+            </a>
+        </div>
+        <div class="item px-3">
+            <a >
+               
+                <img src="https://c.ndtvimg.com/2021-03/v2e5pdvo_jewellery-650_625x300_04_March_21.jpg?im=Resize=(1200,757)" alt="" height="70" width="70">
+                <h6 class=" fw-sembold  pt-2 ">Jewellery</h6>
+            </a>
+        </div>
+    </div>
+
+    <div class="pt-3">
+    <input type="text" class="form-control text-start p-2 text-light fs-4 m-3" placeholder="Search Products">
+    <span class="fas fa-search search-icon text-primary fs-5 fw-bold"></span>
+</div>
+</section>
+
+<!-- container2 finished -->
+
+<section>
+    <div class="row mx-0 m-5 p-3 ">
+        <ng-container *ngFor="let item of productlist">
+            <div class="col-md-4 card m-5 p-5">
+                <img src="{{item.image}}" alt="" height="200" width="200">
+                <h2 style="text-overflow: ellipsis; overflow: hidden; max-width: 80ch; white-space: nowrap;">{{item.title}}</h2>
+                <p style="text-overflow: ellipsis; overflow: hidden; max-width: 70ch; white-space: nowrap;">{{item.description}}</p>
+                <p><strong>{{item.price}}</strong></p>
+                <button class="btn btn-primary " (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+    </div>
+</section>
+

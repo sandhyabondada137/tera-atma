@@ -1,0 +1,20 @@
+
+<form [formGroup]="login" (ngSubmit)="getuser()" class="border">
+    <div>
+      <span>Email id:</span>    <input type="text" name="mail" id="mail" formControlName="mail" placeholder="mail">
+    </div>
+    <div *ngIf="login.controls['mail'].errors?.['required'] && login.controls['mail'].touched">please enter name
+    </div>
+
+    <div>
+      <span>Password: </span>   <input type="text" name="password" id="password" formControlName="password" placeholder="password">
+    </div>
+    <div *ngIf="login.controls['password'].errors?.['required'] && login.controls['password'].touched">please
+        enter name</div>
+
+    <br>
+    <button type="submit" [disabled]="login.invalid">Submit</button>
+    <br>
+    <p class="rout">New user?<a > signup</a></p>
+</form>
+<router-outlet></router-outlet>

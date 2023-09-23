@@ -1,0 +1,29 @@
+
+<form [formGroup]="signup" (ngSubmit)="getuser()" class="border">
+    <div>
+        <input type="text" formControlName="name" placeholder="Name">
+        <span *ngIf="signup.controls['name'].errors?.['required'] && signup.controls['name'].touched">please enter
+            name</span>
+    </div>
+    <div>
+        <input type="text" formControlName="mail" placeholder="Email">
+        <span *ngIf="signup.controls['mail'].errors?.['required'] && signup.controls['mail'].touched">please enter
+            mail</span>
+    </div>
+    <div>
+        <input type="text" formControlName="phonenum" placeholder="Mobilenumber">
+        <span *ngIf="signup.controls['phonenum'].errors?.['required'] && signup.controls['phonenum'].touched">please enter
+          10 digits  number</span>
+            
+    </div>
+    <div>
+        <input type="text" formControlName="password" placeholder="Password">
+        <span *ngIf="signup.controls['password'].errors?.['required'] && signup.controls['password'].touched">please enter
+            password</span>
+    </div>
+   
+    <button type="submit" [disabled]="signup.invalid" >Submit</button>
+
+    <p class="rout">Already have account? <a > login</a></p>
+</form>
+<router-outlet></router-outlet>

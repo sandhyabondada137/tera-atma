@@ -1,0 +1,47 @@
+
+
+<div class="navs">
+    <section class="navs d-flex justify-content-between ">
+        <div class="py-4 px-4 text-light title fs-1 fw-bold"> <a href="" class="title fs-1 fw-bold" >GROW </a>
+        </div> 
+        <div class="text-light title fs-5 fw-bold details d-flex p-5 ps-5 ">
+            <li class="px-3"> <a href="homes" routerLink="/home">Home</a> </li>
+
+            <li class="dropdown px-3">
+                <a class="dropdown-button" href="shop">Shop</a>
+                <div class="dropdown-content">
+                    <a href="*" routerLink="/cact">cactus</a>
+                    <a href="#">succulent</a>
+                    <a href="#">indoor</a>
+                    <a href="#">bonsai</a>
+                </div>
+            </li>
+
+            <li class="px-3"><a href="about">About Us</a></li>
+            <li class="px-3"><a href="test" routerLink="/test">Testimonial</a></li>
+            <li class="px-3"><a href="cart"><i class="fa-solid fa-cart-shopping text-dark title fs-5 fw-bold"></i></a></li>
+        </div>
+    </section>
+</div>
+
+<!-- container1 finished -->
+
+<section *ngFor="let product of prod" class=" mt-5 kk">
+    <div class="d-flex justify-content-evenly ">
+      
+        <img src="{{product.image}}" alt="" height="200" width="200">
+        
+        <p class="fs-5 fw-bold col-3 pt-5 mt-3">{{product.title}}</p>
+       <p class="fs-2 fw-bold pt-5 mt-3">{{product.price}}</p> 
+       <div class="mt-5">
+        <button (click)="increment()">+</button>
+        <button> {{Add}}</button>
+        <button (click)="decrement()">-</button>
+
+
+     
+     </div>
+
+    </div>
+   
+</section>

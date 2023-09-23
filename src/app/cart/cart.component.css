@@ -1,0 +1,31 @@
+.card{
+    height: 80vh;
+
+    padding: 25px;
+}
+.center{
+    position: absolute;
+    top:35%;
+    left:50%;
+    transform: translate(-40%,-40%);
+    text-align: center;
+}
+h3{
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.ss{
+    width: 300px;
+}
+.card-table{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    word-wrap: break-word;
+    background-clip: border-box;
+  
+   
+}
+
